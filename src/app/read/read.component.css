@@ -1,0 +1,56 @@
+.ajout{
+    font-size: 25px;
+    
+}
+/* femme 1 */
+.b{
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    left: 107px;
+    top: 123px;
+    
+}
+.aj{
+    height: 40px;
+    width: 40px;
+    
+}
+.h2{
+   margin-left: 20px;
+}
+
+.nom{
+    font-size: 0.8rem;
+}
+.plus{
+    height: 15px;
+    width: 15px;
+}
+.n1{
+  margin-left: 10%;
+}
+.x{
+    margin-left: 25%;
+}
+.img{
+    height: 15px;
+    width: 15px;
+}
+.plus{
+    height: 400ox;
+    width: 500px;
+}
+.x1{
+    margin-left: 17%;
+}
+.card{
+    margin-left: 5%;
+}
+.esp{
+    height: 50%;
+    width: 50%;
+}
+input[type="text"] {
+    width: 350px;
+}

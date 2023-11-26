@@ -1,0 +1,91 @@
+<div>
+  <div class="form-group mx-sm-3 mb-2" class="rechercher">
+    <input type="text" [(ngModel)]="searchTerm" (input)="onSearch()" class="form-control" id="recherche" placeholder="Rechercher " >
+   
+  </div>
+ 
+ 
+ </div>
+<br>
+
+ 
+<table class="table table-bordered">
+  <thead class="table-active">
+    <tr >
+      
+      <th scope="col">NOM ET PRENOM</th>
+      <th scope="col">DATE ET HEURE</th>
+      <th scope="col"> PRESSION ARTERIELLE</th>
+      <th scope="col">FREQUENCE CARDIAQUE</th>
+      <th scope="col">OXYGENE</th>
+      <th scope="col">ACTION</th>
+      <th scope="col">ETAT</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+   
+    <tr *ngFor="let user of filteredUsers">
+     
+      <td >{{ user.name }}</td>
+      <td >{{user.DH}}</td>
+      <td >{{user.PA}}</td>
+      <td >{{user.FC}}</td>
+      <td >{{user.Ox}}</td>
+      <td>
+<div class="action">
+ <a routerLink="/read"><img class="mod1" src="assets/images/vision.png" ></a>
+    <a routerLink="/read"><img class="mod" src="assets/images/modifier.png" ></a>
+
+</div>
+      </td>
+      <td class="colorR"></td>
+    </tr>
+    <tr *ngFor="let user of filteredUsers">
+     
+      <td >{{ user.name }}</td>
+      <td >{{user.DH}}</td>
+      <td >{{user.PA}}</td>
+      <td >{{user.FC}}</td>
+      <td >{{user.Ox}}</td>
+      <td>
+<div class="action">
+ <a routerLink="/read"><img class="mod1" src="assets/images/vision.png" ></a>
+    <a routerLink="/read"><img class="mod" src="assets/images/modifier.png" ></a>
+
+</div>
+      </td>
+      <td class="colorY"></td>
+    </tr>
+    <tr *ngFor="let user of filteredUsers">
+     
+      <td >{{ user.name }}</td>
+      <td >{{user.DH}}</td>
+      <td >{{user.PA}}</td>
+      <td >{{user.FC}}</td>
+      <td >{{user.Ox}}</td>
+      <td>
+<div class="action">
+ <a routerLink="/read"><img class="mod1" src="assets/images/vision.png" ></a>
+    <a routerLink="/read"><img class="mod" src="assets/images/modifier.png" ></a>
+
+</div>
+      </td>
+      <td class="colorG"></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+ 
+
+
+
+
+
+
+
+    
+    
+  

@@ -1,0 +1,51 @@
+.ajout{
+    font-size: 25px;
+    
+}
+/* femme 1 */
+.b{
+    position: absolute;
+    width: 119px;
+    height: 119px;
+    left: 107px;
+    top: 100px;
+    margin-left: 7%;
+    
+}
+.aj{
+    height: 40px;
+    width: 40px;
+    
+}
+.h2{
+    margin-right: 925px;
+}
+
+.nom{
+    font-size: 0.5rem;
+ 
+}
+.s{
+    margin-left: 50px;
+}
+
+.but{
+    height: 70px;
+    width: 70px;
+}
+.n1{
+    margin-left: 10%;
+  }
+  input[type="text"] {
+    width: 350px;
+}
+.check{
+    font-size: large;
+    margin-left: 1%;
+}
+.env{
+    margin-left: 3%; 
+}
+.spann{
+    width: 50%;
+}

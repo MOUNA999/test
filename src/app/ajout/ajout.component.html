@@ -1,0 +1,78 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th colspan="2">
+        <div class="h2">
+          <a routerLink="/index"><img class="aj" src="assets/images/retour.png"></a>AJOUTER UTILISATEUR 
+        </div>
+          
+          </th>
+         
+    </tr>
+
+    <th >
+      <div class="container">
+          <img class="b" src="assets/images/garcon.png" ><br><br><br><br><br><br><br>
+          <form #utilisateurForm="ngForm" (ngSubmit)="onSubmit(utilisateurForm)">
+             <div class="form-group">
+               
+               <input type="text" class="nom" [style.width.px]="350" class="form-control" id="nom" placeholder="Nom" [(ngModel)]="utilisateur.nom" NgModel required minlength="5"><br>
+             
+              </div>
+             <div class="form-group">
+               <input type="text" [style.width.px]="350" class="form-control" placeholder="Prénom" id="prenom"  [(ngModel)]="utilisateur.prenom" NgModel required minlength="5">
+             </div><br>
+             <div class="form-group">
+               
+              <input type="text" class="nom" size="1" [style.width.px]="350" class="form-control" id="nom" placeholder="Tension Artérielle" [(ngModel)]="utilisateur.nom" NgModel required minlength="5"><br>
+            
+             </div>
+             <div class="form-group">
+               
+              <input type="text" class="nom" [style.width.px]="350" class="form-control" id="nom" placeholder="Fréquence cardiaque" [(ngModel)]="utilisateur.nom" NgModel required minlength="5">
+      
+             </div> 
+          </form>
+         </div>
+    </th>
+   
+  
+
+<tr><br>
+ 
+  <div class="n1">
+    <button (click)="ajouterUtilisateur()"  class="btn btn-outline-info" >Ajouter une maladie</button><br><br>
+    
+      
+        <div *ngFor="let maladie of maladies">
+          
+          <div class="card-body"  (change)="onCheckChange($event, maladie.id)" >
+            <span class="input-group-text" class="spann">
+              <input  type="checkbox" [value]="maladie.id" name="maladie{{maladie.id}}" (change)="onCheckChange($event, maladie.id)">
+              <label class="check" for="maladie{{maladie.id}}">{{maladie.nom}}</label><br><br>
+            </span>
+          
+      </div>
+      <div class="card"   style="width: 18rem;">
+      </div>
+    </div>
+<br>
+
+  <div class="env" >
+    <button  type="button" class="btn btn-outline-info" (click)="displayMessage()" >ENVOYER</button>
+    <p class="n2" class="card-subtitle mb-2 text-muted">{{ message }}</p>
+  </div>
+    
+  </div>
+ 
+</tr>
+  </thead>
+  <br><br>
+
+  
+    
+   
+    
+
+
+

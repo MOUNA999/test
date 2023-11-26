@@ -1,0 +1,83 @@
+<table class="table" class="table table-bordered">
+  <thead>
+    <tr>
+      <th colspan="8">
+        <div class="h2">
+          <a routerLink="/index"><img class="aj" src="assets/images/retour.png"></a>DETAILS DE L'UTILISATEUR 
+        </div>
+          
+          </th>
+         
+    </tr>
+<tr>
+  <th >
+    <div class="container">
+        <img class="b" src="assets/images/garcon.png" ><br><br><br><br><br><br><br><br><br>
+        <form #utilisateurForm="ngForm" (ngSubmit)="onSubmit(utilisateurForm)">
+           <div class="form-group">
+             
+             <input type="text" [style.width.px]="350" class="nom" class="form-control" id="nom" placeholder="Nom" [(ngModel)]="utilisateur.nom" NgModel required minlength="5"><br>
+           
+            </div>
+           <div class="form-group">
+             <input type="text" [style.width.px]="350" class="form-control" placeholder="Prénom" id="prenom"  [(ngModel)]="utilisateur.prenom" NgModel required minlength="5">
+           </div><br>
+           <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title" class="x">Les maladies</h5><br>
+              <h6 class="card-subtitle mb-2 text-muted" class="x1">hypertension artérielle</h6>
+              <h6 class="card-subtitle mb-2 text-muted" class="x1">insuffisance cardiaque</h6>
+              <div class="card-subtitle mb-2 text-muted" class="x1"><a routerLink=""><img class="img" src="assets/images/plus.png"></a>
+               ajouter une maladie
+              </div>
+              
+              
+              
+            </div>
+          </div>
+    <br>
+           <br><br><br><br>
+          
+        </form>
+       </div>
+  </th>
+
+  <th scope="row">
+    <div class="form-group">
+      <p class="font-weight-bold" class="font-italic">Ajouter une maladie</p>
+      <input type="text" class="ajout" [style.width.px]="350" class="nom" class="form-control" id="nom" placeholder="Ajouter une maladie" [(ngModel)]="utilisateur.nom" NgModel required minlength="5"><br>
+      <div class="n1">
+        <button  type="button" class="btn btn-outline-info" (click)="displayMessage()">ENVOYER</button>
+        <p class="n2" class="card-subtitle mb-2 text-muted">{{ message }}</p>
+      </div>
+     </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <table  class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Nom et Prénom</th>
+          <th scope="col">Pression artérielle</th>
+          <th scope="col">Fréquence Cardiaque</th>
+          <th scope="col">Oxygéne</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr >
+          <th scope="row">xxxxx</th>
+          <td>xxxxx</td>
+          <td>xxxx</td>
+          <td>xxxx</td>
+          
+        </tr>
+        
+      </tbody>
+    </table>
+  </th>
+
+  
+  </thead>
+
+
+
+
+
+
