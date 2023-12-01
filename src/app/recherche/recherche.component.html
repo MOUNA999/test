@@ -1,13 +1,26 @@
-<div>
-  <div class="form-group mx-sm-3 mb-2" class="rechercher">
+
+<div class="bonde">
+  <img class="left" class="homme" src="assets/images/garcon.png"><b class="dr">DR.Kammoun</b>
+</div>
+
+
+<table>
+  <tr>
+<th class="form-group mx-sm-3 mb-2" class="rechercher">
     <input type="text" [(ngModel)]="searchTerm" (input)="onSearch()" class="form-control" id="recherche" placeholder="Rechercher " >
    
-  </div>
- 
- 
- </div>
-<br>
+  </th>
+  <th class="div4">
 
+    <a routerLink="/ajout"><img class="Ajoutuser" src="assets/images/ajouter-un-ami.png" ></a><br>
+   
+    <p class="p2">Ajouter un Patient</p>
+  
+  </th>
+<br>
+  </tr>
+  
+</table>
  
 <table class="table table-bordered">
   <thead class="table-active">
@@ -34,8 +47,9 @@
       <td >{{user.Ox}}</td>
       <td>
 <div class="action">
- <a routerLink="/read"><img class="mod1" src="assets/images/vision.png" ></a>
+
     <a routerLink="/read"><img class="mod" src="assets/images/modifier.png" ></a>
+    <a (click)="effacerLigne(i)"><img class="mod" src="assets/images/effacer.png" ></a>
 
 </div>
       </td>
@@ -50,8 +64,9 @@
       <td >{{user.Ox}}</td>
       <td>
 <div class="action">
- <a routerLink="/read"><img class="mod1" src="assets/images/vision.png" ></a>
+
     <a routerLink="/read"><img class="mod" src="assets/images/modifier.png" ></a>
+    <a (click)="effacerLigne(i)"><img class="mod" src="assets/images/effacer.png" ></a>
 
 </div>
       </td>
@@ -66,8 +81,9 @@
       <td >{{user.Ox}}</td>
       <td>
 <div class="action">
- <a routerLink="/read"><img class="mod1" src="assets/images/vision.png" ></a>
+
     <a routerLink="/read"><img class="mod" src="assets/images/modifier.png" ></a>
+    <a (click)="effacerLigne(i)"><img class="mod" src="assets/images/effacer.png" ></a>
 
 </div>
       </td>
@@ -78,14 +94,5 @@
 
 
 
- 
+<a routerLink="/xxx">xxxx</a>
 
-
-
-
-
-
-
-    
-    
-  

@@ -12,15 +12,27 @@ export class AjoutComponent {
   utilisateur = {
     nom: '',
     prenom: '',
+    email: '',
+    phoneNumber: '',
+    age:'',
+    cin: '',
     maladies: [],
     tension: ''
  };
+ isInvalid: boolean = false; // Variable pour vérifier la validation au focus
 
+  onFocus() {
+    this.isInvalid = true; // Activer la validation au focus
+  }
+
+  onBlur() {
+    this.isInvalid = false; // Désactiver la validation au blur
+  }
  maladies = [
     {id: 1, nom: 'hypertension artérielle'},
     {id: 2, nom: 'Insuffisance cardiaque'},
-    {id: 3, nom: 'Autre...'},
-    // ajoutez d'autres maladies si nécessaire
+   
+
  ];
  onCheckChange(event: any, maladieId: number) {
   if (event.target.checked) {
@@ -33,13 +45,10 @@ export class AjoutComponent {
     console.log(this.utilisateur);
  }
 
- maladiesList = ['Hypertension', 'Insuffisance cardiaque', 'Cholesterol', 'Diabète'];
+ maladiesList = ['Hypertension', 'Insuffisance cardiaque'];
 
- onSubmit(form: NgForm) {
-    if (form.valid) {
-      console.log('Détails de l\'utilisateur:', this.utilisateur);
-      form.reset();
-    }
+ onSubmit(utilisateurForm: NgForm) {
+   console.log(utilisateurForm)
  }
  message: string = ''; 
 
@@ -47,7 +56,7 @@ export class AjoutComponent {
    this.message = 'Votre demande est ajoutée';
  }
  showCard: boolean = false;
- texteDeLaCarte: string = 'Texte à afficher dans la carte';
+
 
  toggleCard() {
    this.showCard = !this.showCard;

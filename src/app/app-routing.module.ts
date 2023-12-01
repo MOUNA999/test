@@ -5,13 +5,17 @@ import { IndexComponent } from './index/index.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { AjoutComponent } from './ajout/ajout.component';
 import { ReadComponent } from './read/read.component';
+import { RechercheComponent } from './recherche/recherche.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { AnalyseComponent } from './analyse/analyse.component';
 
 const routes: Routes = [
- { path:'index', component: IndexComponent},
- { path:'Home', component: IndexComponent},
+ { path:'index', component: IndexComponent },
+ { path:'', component: SignInComponent },
  { path:'ajout', component: AjoutComponent},
  { path:'read', component: ReadComponent},
- { path:'**', component: NotfoundComponent},
+ { path:'xxx', component: IndexComponent},
+ { path:'analyse', component: AnalyseComponent},
 ];
 
 @NgModule({

@@ -10,6 +10,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { AjoutComponent } from './ajout/ajout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ReadComponent } from './read/read.component';
+import { SignInComponent } from './sign-in/sign-in.component';
+import { AnalyseComponent } from './analyse/analyse.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { ReadComponent } from './read/read.component';
     NotfoundComponent,
     AjoutComponent,
     ReadComponent,
+    SignInComponent,
+    AnalyseComponent,
   ],
   imports: [
     BrowserModule,

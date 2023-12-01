@@ -2,14 +2,14 @@
     font-size: 25px;
     
 }
-/* femme 1 */
+
 .b{
     position: absolute;
     width: 119px;
     height: 119px;
     left: 107px;
     top: 100px;
-    margin-left: 7%;
+    margin-left: 41%;
     
 }
 .aj{
@@ -18,7 +18,7 @@
     
 }
 .h2{
-    margin-right: 925px;
+    margin-right: 40%;
 }
 
 .nom{
@@ -34,9 +34,12 @@
     width: 70px;
 }
 .n1{
-    margin-left: 10%;
+    margin-left: 43%;
   }
   input[type="text"] {
+    width: 350px;
+}
+.xx{
     width: 350px;
 }
 .check{
@@ -44,8 +47,18 @@
     margin-left: 1%;
 }
 .env{
-    margin-left: 3%; 
+    margin-left: 10%; 
 }
 .spann{
     width: 50%;
 }
+.container{
+    margin-left: 40%;
+}
+.n2{
+    margin-left: 5%;
+}
+
+.invalid {
+    border: 4px solid red; /* Style pour la bordure en rouge */
+  }
